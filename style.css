@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.header__logo {
+    font-size: 48px;
+    color: #dc4312;
+    padding-left: 100px;
+}
+
+.header__content ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.header__content ul li {
+    margin-left: 10px;
+
+}
+
+.header__content a {
+    text-decoration: none;
+    color: #86c0ff;
+    
+}
+
+.header__content a.active,
+.header__content ul a:hover {
+    color: #dc4312;
+    transition: 0.5s;
+}
+
+.slider {
+    background: url(./images-layout1/banner.jpg) top center / cover no-repeat;
+    height: 650px;
+    position: relative;
+    top: 40px;
+    display: block;
+}
+
+.slider__head {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: 110px;
+    top: 8px;
+}
+
+.slider__title, .slider__des p, .slider__des span {
+    background-color: #768086;
+    opacity: 50%;
+}
+
+.slider__title {
+    font-size: 60px;
+    position: absolute;
+    right: 60px;
+    top: 188px;
+}
+
+.slider__des {
+    position: absolute;
+    letter-spacing: 7px;
+    right: 160px;
+    bottom: 298px;
+    text-align: right;
+}
+
+.slider__des p {
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: #29c0ff;
+    padding-top: 60px;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.about__content {
+    width: 90%;
+    margin: auto;
+}
+
+.about__title span {
+    background-color: #768086;
+    font-size: 24px;
+}
+.about__des {
+    margin-top: 16px;
+    color: #a8d6d8;
+}
+.welcome {
+    width: 90%;
+    margin: auto;
+}
+
+.welcome__title {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.welcome__des {
+    text-align: center;
+    color: #768086;
+    margin-bottom: 16px;
+}
+
+.welcome__list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.welcome__item img {
+    width: 100%;
+    display: block;
+}
+
+.welcome__item {
+    display: flex;
+    justify-content: space-between;
+}
+.welcome__item .icon i {
+    font-size: 28px;
+    color:#29c0ff;
+    margin: 8px 8px 0 8px;
+}
+
+.welcome__item h2 {
+    color: #dc4312;
+    margin: 8px 0;
+}
+
+.work__title {
+    text-align: center;
+    font-size: 48px;
+    margin: 16px 0;
+}
+
+.work__content {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.work__item img {
+    width: 100%;
+}
+
+/* Suceed */
+.succeed {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+
+}
+
+.succeed__title {
+    text-align: center;
+    font-size: 58px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.succeed__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.left__title {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.left__content p {
+    color: #768086;
+    padding: 4px;
+}
+
+.content__flex {
+    display: flex;
+    align-items: center;
+}
+
+.content__flex i {
+    font-size: 24px;
+    color: #86c0ff;
+}
+
+.content__right {
+    position: relative;
+    margin: 0;
+}
+
+.content__right img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.right__list {
+    top: 30px;
+    left: 80px;
+    color: white;
+    font-size: 32px;
+    position: absolute;
+}
+
+.right__list .number {
+    color: #29c0ff;
+    font-size: 32px;
+}
+.list__flex {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* footer */
+.footer {
+    background-color: #242424;
+    color: white;
+    padding-top: 32px;
+}
+
+.footer__content {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.block__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.block__list p, .block__right p {
+    color: #768086;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+input {
+    flex: 1;
+    padding: 4px 4px;
+    font-size: 16px;
+    outline: 0;
+  }
+
+button {
+    flex: 0 0 100px;
+    padding: 6px 4px;
+    font-size: 16px;
+    border: none;
+    background: #dc4312;
+    color: #fff;
+    outline: 0;
+  }
+
+
+.block__right {
+    font-size: 64px;
+}
+
+.block__list a {
+    color:#dc4312;
+    text-decoration: none;
+}
+
+/* blog */
